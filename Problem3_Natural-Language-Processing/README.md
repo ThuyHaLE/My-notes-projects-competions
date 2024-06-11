@@ -88,7 +88,7 @@ Tokenization is the first step in natural language processing (NLP) projects. It
 ---
 ### 3. Natural Language Generation (NLG)
 #### 3.1 Text generation:
-Text generation is the process of generating human-like text. It encompasses various techniques and models for generating human-like text, including Natural Language Generation (NLG) models and other methods.
+Text generation is the process of generating human-like text. It encompasses various methodologies, techniques, and models for generating human-like text across many domains, including Natural Language Generation (NLG) models and other methods.
 - ***Natural Language Generation (NLG)***: These models focus on generating human-like text from structured data or input prompts. NLG models aim to produce coherent and contextually relevant text in natural language using various techniques and approaches for generating text, including rule-based methods, statistical models, and deep learning architectures. Its applications in generating text that resembles human language, such as chatbots, content generation, summarization, and translation.
   - The steps within an NLG system:
     - ***Content analysis***: analyzes the information that will be transformed into text, often focusing on understanding the meaning and themes within existing textual data.
@@ -106,7 +106,7 @@ Text generation is the process of generating human-like text. It encompasses var
     - ***Language Translation***: Automatically translating text between languages.
     - ***Medical and Legal Documentation***: Automating the creation of medical reports, patient summaries, and legal documents.
     - ***Creative Writing and Story Generation***: Producing original stories, poems, and narratives based on given prompts.
-- ***Text Generation***: This broader category includes NLG models and other techniques/approaches. Text generation models encompass methods, including rule-based models, statistical models, and deep learning architectures. Text generation models can produce diverse outputs, not only human-like text, but other forms of text synthesis such as code generation, image captioning, and poetry generation.
+- ***Text Generation***: This broader category includes NLG models and other techniques/approaches. Text generation models encompass methods, including rule-based models, statistical models, and deep learning architectures. Text generation models can produce diverse outputs, both human-like text and forms of text synthesis such as code generation and image captioning.
   - The steps within a text generation system:
     - ***Input Processing***: Understand and analyze input data or prompts.
     - ***Model Selection***: Choose an appropriate text generation model.
@@ -115,14 +115,13 @@ Text generation is the process of generating human-like text. It encompasses var
     - ***Evaluation***: Assess the quality of a generated text.
     - ***Fine-tuning***: Refine the model based on evaluation results.
   - Some common applications of text generation:
-    - ***Automated Content Generation***: Generating news articles, product descriptions, social media posts, and website content.
-    - ***Chatbots and Virtual Assistants***: Engaging in natural language conversations to provide customer support, answer queries, and assist with tasks.
-    - ***Text Summarization***: Automatically summarizing long documents, articles, or conversations into concise and informative summaries.
-    - ***Machine Translation***: Translating a text from one language to another.
+    - ***Automated Content Generation***
+    - ***Chatbots and Virtual Assistants***
+    - ***Text Summarization***
+    - ***Machine Translation***
+    - ***Poetry Generation, Storytelling and, Narrative Generation***:
     - ***Code Generation***: Automatically generating code snippets or scripts based on specifications or input requirements.
-    - ***Image Captioning***: Generating descriptive captions for images, improving accessibility and user experience in image-based applications.
-    - ***Poetry Generation***: Creating original poems or lyrical compositions based on given themes or styles.
-    - ***Storytelling and Narrative Generation***: Generating original stories, narratives, or dialogues for entertainment or educational purposes.
+    - ***Image Captioning***: Generating descriptive captions for images, improving accessibility and user experience in image-based applications. 
       
 #### 3.2 Text generation models
 Text generation refers to the process of generating human-like text using various techniques and models
