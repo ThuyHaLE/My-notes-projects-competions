@@ -1,8 +1,10 @@
 # Natural Language Processing (a big picture)
 Natural Language Processing (NLP), Natural Language Understanding (NLU), and Natural Language Generation (NLG) are all closely related subfields within the broader field of Natural Language Technology (NLT).
 
-# Natural Language Technology (NLT) 
+![image](https://github.com/ThuyHaLE/My-notes-projects-competions/assets/95512819/c253d29d-a9fe-48da-b978-24f4b9d8b082)
 
+
+# Natural Language Technology (NLT) 
 Natural Language Technology (NLT) is a field that uses various techniques and methods to analyze, understand, and generate human language. <Br> https://oneai.com/learn/natural-language-technology-nlt
 - *Machine Learning*: <Br> Machine learning is a method that uses algorithms to learn from data and make predictions or decisions. It is widely used in NLT for tasks such as sentiment analysis, named entity recognition, and text summarization.
 - *Deep Learning*: <Br> Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn from data. It is particularly useful for tasks such as language generation, machine translation, and text classification.
@@ -128,7 +130,7 @@ There are two main categories of Text Generation Models:
 - **Statistical models**: learn patterns from large amounts of text data:
   - **Traditional statistical models**: Techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)***.
   - **Neural statistical models**: Includes Bengio's ***Neural Probabilistic Language Model (NPLM)***
-  - **Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes Transformers and Large Language Models (LLMs) respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
+  - **Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes ***Transformers*** and ***Large Language Models (LLMs)*** respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
 ##### 3.2.1 Rule-based models:
 - ***Predefined Rules***: Linguists and domain experts craft a set of rules that govern how the text is structured and phrased. These rules cover aspects like grammar, sentence structure, and word choice.
 - ***Pattern Matching***: The model analyzes the situation or input and identifies patterns that match its rule set.
@@ -153,7 +155,7 @@ Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***p
       - **Hugging Face**: emphasizes model access, fine-tuning, and community collaboration
 #### 3.3 Large Language Models (LLMs):
 ##### 3.3.1 Prompt: 
-Plays a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
+Play a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
 - **Basic prompting engineering techniques**: fundamental strategies used to design prompts
   - ***Task Definition***: Clearly define the task or objective to guide the model's behavior.
   - ***Context Establishment***: Provide relevant background information or context to help the model understand the task.
