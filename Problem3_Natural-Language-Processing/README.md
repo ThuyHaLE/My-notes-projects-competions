@@ -123,6 +123,7 @@ Text generation is the process of generating human-like text. It encompasses var
     - ***Image Captioning***: Generating descriptive captions for images, improving accessibility and user experience in image-based applications.
     - ***Poetry Generation***: Creating original poems or lyrical compositions based on given themes or styles.
     - ***Storytelling and Narrative Generation***: Generating original stories, narratives, or dialogues for entertainment or educational purposes.
+      
 #### 3.2 Text generation models
 Text generation refers to the process of generating human-like text using various techniques and models
 There are two main categories of Text Generation Models:
@@ -131,11 +132,13 @@ There are two main categories of Text Generation Models:
   - **Traditional statistical models**: Techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)***.
   - **Neural statistical models**: Includes Bengio's ***Neural Probabilistic Language Model (NPLM)***
   - **Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes ***Transformers*** and ***Large Language Models (LLMs)*** respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
+    
 ##### 3.2.1 Rule-based models:
 - ***Predefined Rules***: Linguists and domain experts craft a set of rules that govern how the text is structured and phrased. These rules cover aspects like grammar, sentence structure, and word choice.
 - ***Pattern Matching***: The model analyzes the situation or input and identifies patterns that match its rule set.
 - ***Template Selection***: Based on the matched pattern, the model selects a pre-defined template for the text generation. These templates can be simple phrases or more complex structures with placeholders.
 - ***Filling the Blanks***: The model fills the placeholders in the chosen template with specific words based on the rules and any available data.
+  
 ##### 3.2.2 Statistical models:
 - **Traditional statistical models**: <Br>
 Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***predictions***. This category encompasses techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)*** used for text generation.
@@ -149,10 +152,12 @@ Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***p
     - **Decoder-Only Transformers** (e.g., GPT-n): focus solely on the decoder part, excelling at text generation tasks like creating stories or poems. They process information sequentially, predicting the next word based on the previous ones. However, they may not be ideal for tasks requiring full context understanding, such as question answering.
     - **Encoder-Decoder Transformers** (e.g., T5): combine encoder and decoder parts. The encoder encodes the input sentence, and the decoder uses that encoded representation to generate the output. These models are often used for machine translation, where the model's mission is to understand the source language (encode) and generate the target language (decode).
   - **Large Language Models (LLMs)**: <Br> A deep learning model specifically trained on massive amounts of text data allows them to learn complex statistical relationships between words and generate human-quality text as a response to a prompt or question.
+    - **Pretrained-model**: include Closed-Source Models which are powerful, state-of-the-art models like GPT-3, Gemini, and Claude... available via commercial APIs or specific platforms, and Open-Source Models which are widely accessible and customizable models like BERT, GPT-2, RoBERTa, and T5, available for download and fine-tuning.
     - **Prompt**: plays a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
     - **Open-source framework**: is designed to facilitate the development of applications powered by large language models (LLMs). It streamlines the process includes integrating and managing LLMs in various applications, enabling developers to build sophisticated AI systems more efficiently. Its benefits include (1) No licensing fees, reduced financial burden, (2) Open source code allows inspection and fosters trust, (3) Enables community contributions and faster advancement, (4) Adaptable to specific needs and allows for fine-tuning, (5) Provides learning opportunities for developers and researchers...
       - **LangChain**: focuses on prompt engineering, multi-step workflows, and abstraction of LLM integration
       - **Hugging Face**: emphasizes model access, fine-tuning, and community collaboration
+        
 #### 3.3 Large Language Models (LLMs):
 ##### 3.3.1 Prompt: 
 Play a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
@@ -183,7 +188,20 @@ Play a crucial role in using prompting engineering techniques to guide the model
   - ***Reflexion***: Encourages self-awareness and reflection in the model's reasoning process.
   - ***Multimodal CoT***: extends Chain-of-Thought prompting to incorporate multimodal inputs.
   - ***Graph Prompting***: represents prompts and responses as graphs, facilitating efficient processing and manipulation.
-##### 3.3.2 Capabilities of LLMs: 
+
+##### 3.3.2 Pretrained models:
+- **Closed-Source Models**:
+These models are developed by organizations that do not publicly release the model weights or code. They are usually accessible through APIs or specific platforms.
+  - GPT-n (OpenAI): A powerful language model with billions of parameters, available via the OpenAI API.
+  - Gemini (Google DeepMind): Advanced models are typically not open-sourced but accessible through Google's platforms.
+  - Claude (Anthropic): An advanced language model accessed via specific platforms or APIs.
+- **Open-Source Models**:
+These models are publicly released with their weights and code, allowing anyone to download, fine-tune, and deploy them.
+  - BERT (Google): Bidirectional Encoder Representations from Transformers, effective for many NLP tasks.
+  - GPT-2 (OpenAI): The predecessor to GPT-3, smaller but still very capable, available for download and customization.
+  - RoBERT-a (Facebook AI): A robustly optimized version of BERT, designed to improve performance on NLP tasks.
+
+##### 3.3.3 Capabilities of LLMs: 
 Some of the key capabilities of text generation models include:
 - ***Natural Language Understanding***: understand and process natural language input, allowing them to interpret user queries, commands, or prompts effectively.
 - ***Contextual Understanding***: captures contextual information from the input text, enabling the generation of responses or outputs that are contextually relevant and coherent.
@@ -195,7 +213,8 @@ Some of the key capabilities of text generation models include:
 - ***Long-Range Dependencies***: capture complex linguistic structures and relationships by effectively handling long-range dependencies in the input text.
 - ***Semantic Understanding***: understand the semantic meaning of the input text, enabling them to generate semantically meaningful responses aligned with the input.
 - ***Interactive Generation***: support interactive generation, where users can provide feedback or guidance in the generation process to steer the outputs toward desired directions.
-##### 3.3.3 Performance-enhanced LLMs in domain-specific knowledge:
+  
+##### 3.3.4 Performance-enhanced LLMs in domain-specific knowledge:
 While LLMs possess impressive capabilities, fine-tuning remains valuable for several reasons:
 - ***Task-Specific Adaptation***: Fine-tuning allows models to adapt to specific tasks or domains, optimizing their performance for particular applications.
 - ***Domain-Specific Knowledge***: Fine-tuning enables models to learn domain-specific nuances and vocabulary, enhancing the relevance and accuracy of generated outputs.
@@ -211,7 +230,8 @@ A general process of fine-tuning:
 - ***Evaluation***: Assess model performance.
 - ***Refinement***: Adjust as needed.
 - ***Deployment***: Use the fine-tuned model for text generation tasks.
-##### 3.3.4 Applications of LLMs:
+  
+##### 3.3.5 Applications of LLMs:
 There is 1 special point, the LLMs are built using Transformers (often) or other deep learning architectures to train for NLG tasks. However, they are highly versatile and can be fine-tuned for various applications beyond traditional NLG tasks. Therefore some tasks typically fall outside the scope of Natural Language Generation (NLG) tasks but inside the scope of LLMs. For code generation tasks (which fall outside the scope of NLG), LLMs can be trained to understand programming languages and generate code snippets or scripts based on input prompts. This can be particularly useful for automating software development tasks, providing code suggestions, or assisting programmers in writing code more efficiently.
 - ***Language translation***
 - ***Text summarization***
@@ -238,6 +258,7 @@ Retrieval-Augmented Generation (RAG) components <Br>
   - [Retrieval](https://colab.research.google.com/drive/1c8KAuqoc7WRyQvv7hlugyBvT_jYPxKzs?usp=drive_link)
 - Generation
   - [Generation](https://colab.research.google.com/drive/1aJYZcQCsVia4Vay7tT53mRthgsmARwUY?usp=drive_link)
+    
 #### 4.2 Retrieval Augmented Fine-Tuning (RAFT)
 Retrieval Augmented Fine-Tuning (RAFT) is a performance-enhanced RAG in domain-specific knowledge. <Br>
 Flow: **RAG + Fine-Tuning => RAFT** <Br>
