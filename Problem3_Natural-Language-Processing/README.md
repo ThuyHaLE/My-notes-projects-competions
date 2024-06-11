@@ -119,7 +119,7 @@ Text generation is the process of generating human-like text. It encompasses var
     - ***Chatbots and Virtual Assistants***
     - ***Text Summarization***
     - ***Machine Translation***
-    - ***Poetry Generation, Storytelling and, Narrative Generation***:
+    - ***Poetry Generation, Storytelling and, Narrative Generation***
     - ***Code Generation***: Automatically generating code snippets or scripts based on specifications or input requirements.
     - ***Image Captioning***: Generating descriptive captions for images, improving accessibility and user experience in image-based applications. 
       
