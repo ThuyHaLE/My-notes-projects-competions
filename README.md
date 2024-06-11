@@ -15,5 +15,5 @@ My notes, my projects and my competitions
 - 📎 [Kalapa Challenge 2023 - Vietnamese Handwritten Text Recognition](https://github.com/ThuyHaLE/VietnameseHandwrittenTextRecognition)
   
 >Some API applications
-- 📎 [API-applications](https://github.com/ThuyHaLE/API-application)
+- 📎 API-applications
 
