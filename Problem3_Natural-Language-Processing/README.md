@@ -100,7 +100,7 @@ Refine and format the model's output for the end application.
     
 ---
 ### Natural Language Generation (NLG)
-involves the generation of human-like text (coherent and contextually relevant text) based on input data.
+**Natural Language Generation (NLG)** involves the generation of human-like text (coherent and contextually relevant text) based on input data.
 #### 1. Text generation:
 Text generation is the process of generating human-like text. It encompasses various methodologies, techniques, and models for generating human-like text across many domains, including Natural Language Generation (NLG) models and other methods.
 - ***Natural Language Generation (NLG)***: These models focus on generating human-like text from structured data or input prompts. NLG models aim to produce coherent and contextually relevant text in natural language using various techniques and approaches for generating text, including rule-based methods, statistical models, and deep learning architectures. Its applications in generating text that resembles human language, such as chatbots, content generation, summarization, and translation.
