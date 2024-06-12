@@ -15,49 +15,66 @@ Natural Language Technology (NLT) is a field that uses various techniques and me
 
 ---
 ### 1. Natural Language Processing (NLP)
-**Natural Language Processing (NLP)** focuses on enabling computers to understand human language in both written and verbal forms. It involves machine learning and deep learning techniques. (1) Tokenization, (2) Embedding, and (3) Model architectures, are three main components that help machines understand natural language. 
-- Language Processing Pipelines <Br>
-Text => tokenizer >> tagger > parser > ner > ... => Doc
-  - [Natural Language Processing | Preprocessing using spaCy](https://colab.research.google.com/drive/1VChFh5pcY-yKzXWCIHUX6DNbMmgT0RoK?usp=sharing)
-  - [Natural Language Processing | Preprocessing using nltk](https://colab.research.google.com/drive/1aoimloh3KtrrkjrkgG9MlU1U_xA65lwn?usp=sharing)
-- Tokenization and vectorization in NLP <Br>
-Tokenization is the first step in natural language processing (NLP) projects. It involves dividing a text into individual units, known as tokens. Tokens can be words or punctuation marks. These tokens are then transformed into numerical vectors representing words. Two main concepts are vectorization and embedding. Text Vectorization is the process of turning words into numerical vectors in a one-dimensional space. Word Embedding (Word Vector) is a type of vectorization through deep learning as dense vectors in a high-dimensional space. 
-  - Tokenization in NLP
-    - [Sentence based](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
-    - [Word based](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
-    - [Character based](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
-    - Subwords based
-      - [BPE Algorithm – a Frequency-based Model](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
-      - [WordPiece Algorithm](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
-      - [Unigram Algorithm – a Probability-based Model](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
-  - Vectorization in NLP
-    - Text Vectorization
-      - Traditional approach
-        - [One-Hot Encoding](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
-        - [Bag of Words](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
-        - [CountVectorizer](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
-        - [TF-IDF](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
-    - Word Embedding
-      - Context-independent
-        - Neural Word Embedding
-          - [Word2Vec](https://colab.research.google.com/drive/1_YijyM-9mHKujbW5_PoDdvks1k5rMSt_?usp=sharing)
-        - Pretrained Word-Embedding
-          - [GloVe](https://colab.research.google.com/drive/1_YijyM-9mHKujbW5_PoDdvks1k5rMSt_?usp=sharing)
-          - [FastText](https://colab.research.google.com/drive/1_YijyM-9mHKujbW5_PoDdvks1k5rMSt_?usp=sharing)
-      - Context-dependent
-        - RNN based
-          - [ELMO](https://colab.research.google.com/drive/1MkNmcfM6Pfb2yzTUYIcPSyvTFH2Ubpnd?usp=sharing)
-          - [CoVe](https://colab.research.google.com/drive/1RkPi17NjwRUOzXAsT5uUFZqBBQQPkP8Z?usp=sharing)
-        - Transformer based
-          - [BERT](https://colab.research.google.com/drive/1sJ6umr6JsH2VmV2gmmyq7YVMMspktYri?usp=sharing)
-          - XML
-          - RoBERTa
-          - ALBERT
-    - [Document Embedding](https://colab.research.google.com/drive/1Vq4nFMg58rvDy_pCLJv5VVDHczCrKNOX?usp=sharing)
-      - Doc2Vec
-        - Distributed Memory (DM)
-        - Distributed Bag of Words (DBOW)
-        
+**Natural Language Processing (NLP)** focuses on enabling computers to understand human language in both written and verbal forms. It involves machine learning and deep learning techniques. (1) Tokenization, (2) Embedding, and (3) Model architectures, are three main components that help machines understand natural language. Tokenization is the first step in natural language processing (NLP) projects. It involves dividing a text into individual units, known as tokens. Tokens can be words or punctuation marks. These tokens are then transformed into numerical vectors representing words. Two main concepts are vectorization and embedding. Text Vectorization is the process of turning words into numerical vectors in a one-dimensional space. Word Embedding (Word Vector) is a type of vectorization through deep learning as dense vectors in a high-dimensional space. Then, these numerical vectors will be fed to models and processed for specific tasks.
+#### 1.1 Natural Language Processing Pipelines**:
+##### 1.1.1 Preprocessing:
+Includes tokenization, stemming, lemmatization, and stop-word removal.
+- Tokenization
+  - [Sentence based](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
+  - [Word based](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
+  - [Character based](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
+  - Subwords based
+    - [BPE Algorithm – a Frequency-based Model](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
+    - [WordPiece Algorithm](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
+    - [Unigram Algorithm – a Probability-based Model](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
+- [Preprocessing using spaCy](https://colab.research.google.com/drive/1VChFh5pcY-yKzXWCIHUX6DNbMmgT0RoK?usp=sharing)
+- [Preprocessing using nltk](https://colab.research.google.com/drive/1aoimloh3KtrrkjrkgG9MlU1U_xA65lwn?usp=sharing)
+##### 1.1.2. Feature Extraction: 
+convert text to numerical representations.
+- Text Vectorization:
+  - Traditional approach
+    - [One-Hot Encoding](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
+    - [Bag of Words](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
+    - [CountVectorizer](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
+    - [TF-IDF](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
+- Word Embedding (Word Vector):
+  - Context-independent
+    - Neural Word Embedding
+      - [Word2Vec](https://colab.research.google.com/drive/1_YijyM-9mHKujbW5_PoDdvks1k5rMSt_?usp=sharing)
+    - Pretrained Word-Embedding
+      - [GloVe](https://colab.research.google.com/drive/1_YijyM-9mHKujbW5_PoDdvks1k5rMSt_?usp=sharing)
+      - [FastText](https://colab.research.google.com/drive/1_YijyM-9mHKujbW5_PoDdvks1k5rMSt_?usp=sharing)
+  - Context-dependent
+    - RNN based
+      - [ELMO](https://colab.research.google.com/drive/1MkNmcfM6Pfb2yzTUYIcPSyvTFH2Ubpnd?usp=sharing)
+      - [CoVe](https://colab.research.google.com/drive/1RkPi17NjwRUOzXAsT5uUFZqBBQQPkP8Z?usp=sharing)
+    - Transformer based
+      - [BERT](https://colab.research.google.com/drive/1sJ6umr6JsH2VmV2gmmyq7YVMMspktYri?usp=sharing)
+      - XML
+      - RoBERTa
+      - ALBERT
+- [Document Embedding](https://colab.research.google.com/drive/1Vq4nFMg58rvDy_pCLJv5VVDHczCrKNOX?usp=sharing)
+  - Doc2Vec
+    - Distributed Memory (DM)
+    - Distributed Bag of Words (DBOW)
+##### 1.1.3. Modeling: 
+Use machine learning or deep learning models to process data for specific tasks. The main model architectures include:
+- **Recurrent Neural Networks (RNNs)**: Good for sequential data.
+  - ***Long Short-Term Memory (LSTM)***
+  - ***Gated Recurrent Units (GRUs)***
+- **Convolutional Neural Networks (CNNs)**: Effective for capturing local patterns.
+- **Transformers**: State-of-the-art models like BERT and GPT that excel at capturing long-range dependencies in text.
+##### 1.1.4. Post-processing: 
+Refine and format the model's output for the end application.        
+#### 1.2 Common NLP Tasks
+- ***Text Classification***
+- ***Named Entity Recognition (NER)***
+- ***Machine Translation***
+- ***Text Summarization***
+- ***Question Answering***
+- ***Part-of-Speech Tagging (POS)***
+- ***Speech Recognition***
+- ***Text Generation***
 ---
 ### 2. Natural Language Understanding (NLU)
 **Natural Language Understanding (NLU)** deals with the ability of computers to understand the meaning of text written in natural language.
