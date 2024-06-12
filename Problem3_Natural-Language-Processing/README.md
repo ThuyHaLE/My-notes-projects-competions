@@ -1,23 +1,22 @@
 # Natural Language Processing (a big picture)
 Natural Language Processing (NLP), Natural Language Understanding (NLU), and Natural Language Generation (NLG) are all closely related subfields within the broader field of Natural Language Technology (NLT).
-
-![image](https://github.com/ThuyHaLE/My-notes-projects-competions/assets/95512819/c253d29d-a9fe-48da-b978-24f4b9d8b082)
-
-
 # Natural Language Technology (NLT) 
-Natural Language Technology (NLT) is a field that uses various techniques and methods to analyze, understand, and generate human language. <Br> https://oneai.com/learn/natural-language-technology-nlt
-- *Machine Learning*: <Br> Machine learning is a method that uses algorithms to learn from data and make predictions or decisions. It is widely used in NLT for tasks such as sentiment analysis, named entity recognition, and text summarization.
-- *Deep Learning*: <Br> Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn from data. It is particularly useful for tasks such as language generation, machine translation, and text classification.
-- *Rule-Based Systems*: <Br> Rule-based systems use a set of pre-defined rules and heuristics to analyze and understand the text. They are commonly used in tasks such as part-of-speech tagging, syntactic parsing, and named entity recognition.
-- *Language Modeling*: <Br> Language modeling is a statistical method used to predict the probability distribution of a sequence of words. It is used to train models that can generate text and improve the performance of other NLP tasks such as speech recognition and machine translation.
-- *Transfer Learning*: <Br> Transfer learning is a method that involves pre-training a neural network on a large dataset and then fine-tuning it on a smaller dataset for a specific task. This approach can be used to improve task performance such as sentiment analysis, named entity recognition, and language translation.
-- *Reinforcement Learning*: <Br> Reinforcement learning is a method in which an agent learns by taking actions in an environment to maximize a reward. It is used for tasks such as dialog systems and text generation. 
+Natural Language Technology (NLT) is an umbrella term that includes 
+Natural Language Technology (NLT) is a field that uses various technologies and methodologies for dealing with human language.
+- *Machine Learning*: <Br> a method that uses algorithms to learn from data and make predictions or decisions (sentiment analysis, named entity recognition (NER), and text summarization).
+- *Deep Learning*: <Br> a subset of machine learning that uses neural networks with multiple layers to learn from data (language generation, machine translation, and text classification).
+- *Rule-Based Systems*: <Br> use pre-defined rules and heuristics to analyze and understand the text (part-of-speech tagging (POS-tagging), syntactic parsing, and named entity recognition).
+- *Language Modeling*: <Br> a statistical method used to predict the probability distribution of a sequence of words. It is used to train models that can generate text and improve the performance of speech recognition and machine translation.
+- *Transfer Learning*: <Br> a method that involves pre-training a neural network on a large dataset and then fine-tuning it on a smaller dataset for a specific task. This approach can improve task performance such as sentiment analysis, named entity recognition, and language translation.
+- *Reinforcement Learning*: <Br> a method in which an agent learns by taking actions in an environment to maximize a reward. It is used for tasks such as dialog systems and text generation. <Br>
+
+Natural Language Processing (NLP) is a critical subset of NLT, providing the core techniques for understanding and generating text and speech.
 
 ---
-### 1. Natural Language Processing (NLP)
-**Natural Language Processing (NLP)** focuses on enabling computers to understand human language in both written and verbal forms. It involves machine learning and deep learning techniques. (1) Tokenization, (2) Embedding, and (3) Model architectures, are three main components that help machines understand natural language. Tokenization is the first step in natural language processing (NLP) projects. It involves dividing a text into individual units, known as tokens. Tokens can be words or punctuation marks. These tokens are then transformed into numerical vectors representing words. Two main concepts are vectorization and embedding. Text Vectorization is the process of turning words into numerical vectors in a one-dimensional space. Word Embedding (Word Vector) is a type of vectorization through deep learning as dense vectors in a high-dimensional space. Then, these numerical vectors will be fed to models and processed for specific tasks.
-#### 1.1 Natural Language Processing Pipelines**:
-##### 1.1.1 Preprocessing:
+### Natural Language Processing (NLP)
+**Natural Language Processing (NLP)** focuses on enabling computers to understand human language in both written and verbal forms. It involves machine learning and deep learning techniques. (1) Tokenization, (2) Embedding, and (3) Model architectures, are the three main components that help machines understand natural language. Tokenization is the first step in natural language processing (NLP) projects. It involves dividing a text into individual units, known as tokens. Tokens can be words or punctuation marks. These tokens are then transformed into numerical vectors representing words. Two main concepts are vectorization and embedding. Text Vectorization is the process of turning words into numerical vectors in a one-dimensional space. Word Embedding (Word Vector) is a type of vectorization through deep learning as dense vectors in a high-dimensional space. Then, these numerical vectors will be fed to models and processed for specific tasks.
+#### 1. Natural Language Processing Pipelines:
+##### 1.1 Preprocessing:
 Includes tokenization, stemming, lemmatization, and stop-word removal.
 - Tokenization
   - [Sentence based](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
@@ -29,8 +28,8 @@ Includes tokenization, stemming, lemmatization, and stop-word removal.
     - [Unigram Algorithm – a Probability-based Model](https://colab.research.google.com/drive/1CWyJzCyD1pc2u0JXG4C0NFyZtcJjTqK6#scrollTo=Kf2RKlgKzsro)
 - [Preprocessing using spaCy](https://colab.research.google.com/drive/1VChFh5pcY-yKzXWCIHUX6DNbMmgT0RoK?usp=sharing)
 - [Preprocessing using nltk](https://colab.research.google.com/drive/1aoimloh3KtrrkjrkgG9MlU1U_xA65lwn?usp=sharing)
-##### 1.1.2. Feature Extraction: 
-convert text to numerical representations.
+##### 1.2. Feature Extraction: 
+Convert text to numerical representations.
 - Text Vectorization:
   - Traditional approach
     - [One-Hot Encoding](https://colab.research.google.com/drive/1oljXnBEnNFsWQBR1ebl-u_C8bhM22-Ik?usp=sharing)
@@ -57,54 +56,52 @@ convert text to numerical representations.
   - Doc2Vec
     - Distributed Memory (DM)
     - Distributed Bag of Words (DBOW)
-##### 1.1.3. Modeling: 
+##### 1.3. Modeling: 
 Use machine learning or deep learning models to process data for specific tasks. The main model architectures include:
 - **Recurrent Neural Networks (RNNs)**: Good for sequential data.
   - ***Long Short-Term Memory (LSTM)***
   - ***Gated Recurrent Units (GRUs)***
 - **Convolutional Neural Networks (CNNs)**: Effective for capturing local patterns.
 - **Transformers**: State-of-the-art models like BERT and GPT that excel at capturing long-range dependencies in text.
-##### 1.1.4. Post-processing: 
+##### 1.4. Post-processing: 
 Refine and format the model's output for the end application.        
-#### 1.2 Common NLP Tasks
-- ***Text Classification***
-- ***Named Entity Recognition (NER)***
-- ***Machine Translation***
-- ***Text Summarization***
-- ***Question Answering***
-- ***Part-of-Speech Tagging (POS)***
-- ***Speech Recognition***
-- ***Text Generation***
+#### 2. Fundamental sub-fields of Natural Language Processing (NLP):
+- **Speech Recognition**: Converting spoken language into text.
+- **Natural Language Understanding (NLU)**: Understanding the meaning of text.
+- **Natural Language Generation (NLG)**: Producing human-like text based on input data.
+- **Text-to-Speech (TTS)**: Converting text back into spoken language
+
 ---
-### 2. Natural Language Understanding (NLU)
-**Natural Language Understanding (NLU)** deals with the ability of computers to understand the meaning of text written in natural language.
-- **Core functionalities**:
-  - ***Extracting Meaning***: aims to understand the intent, sentiment, and overall message conveyed in a sentence or passage.
-  - ***Analyzing Context***: considers the context surrounding the language. For instance, "the bank is closed" can have different meanings depending on the context (financial institution vs. riverbank).
-  - ***Disambiguation***: Language can be ambiguous at times. NLU tackles situations where a word or phrase can have multiple meanings.
+### Natural Language Understanding (NLU)
+**Natural Language Understanding (NLU)** deals with the ability of computers to understand the meaning and context of human language and allows machines to comprehend text in a way similar to how humans do.
+#### 1. Core functionalities:
+- ***Extracting Meaning***: aims to understand the intent, sentiment, and overall message conveyed in a sentence or passage.
+- ***Analyzing Context***: considers the context surrounding the language. For instance, "the bank is closed" can have different meanings depending on the context (financial institution vs. riverbank).
+- ***Disambiguation***: Language can be ambiguous at times. NLU tackles situations where a word or phrase can have multiple meanings.
 
-- **How NLU works**:
-  - ***Breaking it down***: break down the input text into smaller components like words, phrases, and sentences.
-  - ***Understanding Relationships***: analyzes the relationships between these components. This involves part-of-speech tagging (identifying nouns, verbs, etc.) and recognizing grammatical structures.
-  - ***Deriving Meaning***: Based on the analysis, infer the meaning of the text. This might involve considering the context in which the language is used.
+#### 2. How NLU works:
+- ***Breaking it down***: break down the input text into smaller components like words, phrases, and sentences.
+- ***Understanding Relationships***: analyzes the relationships between these components. This involves part-of-speech tagging (identifying nouns, verbs, etc.) and recognizing grammatical structures.
+- ***Deriving Meaning***: Based on the analysis, infer the meaning of the text. This might involve considering the context in which the language is used.
 
-- **Common NLU tasks**:
-  - ***Text Classification***: automatically categorizing a text into predefined categories. Examples: sentiment analysis (positive, negative, neutral), spam filtering (spam, not spam), or topic labeling (sports, politics, entertainment).
-    - [Sentence Classifier (simple sentences, compound sentences, complex sentences, passive sentences) using Dependency parsing (Trankit)](https://colab.research.google.com/drive/1T76FLqelbCPs59RjpeiwqO3d7cjaLaAb?usp=sharing)
-  - ***Named Entity Recognition (NER)***: identifies and classifies named entities within a text, such as people, organizations, locations, dates, monetary values, etc for information extraction or question answering.
-  - ***Text Summarization***: generate a concise summary of a long text while preserving the key points and meaning. Summarization can be beneficial for quickly grasping the main idea of an article or document.
-  - ***Machine Translation***: plays a vital role in machine translation, where the system understands the source language (e.g., English) and translates it accurately into the target language (e.g., Spanish) while preserving the meaning and intent.
-  - ***Question Answering***: answer questions for information retrieval from a knowledge base or open-ended, more challenging questions that require reasoning and inference.
-  - ***Part-of-Speech Tagging (POS)***: assigns grammatical labels (e.g., noun, verb, adjective) to each word in a sentence. POS tagging is a fundamental step in NLU, providing valuable information about the sentence structure that can be used for various downstream tasks.
-    - [Part-Of-SpeechTagging using Hidden MarkovModel](https://colab.research.google.com/drive/1h_DSf0bV5d0kHEpFeWkpCIC3ghSjA3_O?usp=sharing)
-  - ***Sentiment Analysis***: goes beyond simple classification (positive, negative) and aims to understand a text's emotional tone or opinion. This can involve analyzing the sentiment of product reviews, social media posts, or customer feedback data.
-  - ***Dialogue Management***: in chatbots or virtual assistants. It allows the system to understand the user's intent within a conversation, track the conversation flow, and generate appropriate responses.
-  - ***Textual Entailment***: determines whether the meaning of one sentence (hypothesis) is entailed by the definition of another sentence (text). It requires the NLU system to understand the logical relationships between sentences.
-  - ***Natural Language Inference***: involves reasoning about the relationship between two sentences (Similar to textual entailment). The system determines if the second sentence (hypothesis) can be inferred from the first sentence (premise).
+#### 3. Common NLU tasks:
+- ***Text Classification***: automatically categorizing a text into predefined categories. Examples: sentiment analysis (positive, negative, neutral), spam filtering (spam, not spam), or topic labeling (sports, politics, entertainment).
+  - [Sentence Classifier (simple sentences, compound sentences, complex sentences, passive sentences) using Dependency parsing (Trankit)](https://colab.research.google.com/drive/1T76FLqelbCPs59RjpeiwqO3d7cjaLaAb?usp=sharing)
+- ***Named Entity Recognition (NER)***: identifies and classifies named entities within a text, such as people, organizations, locations, dates, monetary values, etc for information extraction or question answering.
+- ***Text Summarization***: generate a concise summary of a long text while preserving the key points and meaning. Summarization can be beneficial for quickly grasping the main idea of an article or document.
+- ***Machine Translation***: plays a vital role in machine translation, where the system understands the source language (e.g., English) and translates it accurately into the target language (e.g., Spanish) while preserving the meaning and intent.
+- ***Question Answering***: answer questions for information retrieval from a knowledge base or open-ended, more challenging questions that require reasoning and inference.
+- ***Part-of-Speech Tagging (POS)***: assigns grammatical labels (e.g., noun, verb, adjective) to each word in a sentence. POS tagging is a fundamental step in NLU, providing valuable information about the sentence structure that can be used for various downstream tasks.
+  - [Part-Of-SpeechTagging using Hidden MarkovModel](https://colab.research.google.com/drive/1h_DSf0bV5d0kHEpFeWkpCIC3ghSjA3_O?usp=sharing)
+- ***Sentiment Analysis***: goes beyond simple classification (positive, negative) and aims to understand a text's emotional tone or opinion. This can involve analyzing the sentiment of product reviews, social media posts, or customer feedback data.
+- ***Dialogue Management***: in chatbots or virtual assistants. It allows the system to understand the user's intent within a conversation, track the conversation flow, and generate appropriate responses.
+- ***Textual Entailment***: determines whether the meaning of one sentence (hypothesis) is entailed by the definition of another sentence (text). It requires the NLU system to understand the logical relationships between sentences.
+- ***Natural Language Inference***: involves reasoning about the relationship between two sentences (Similar to textual entailment). The system determines if the second sentence (hypothesis) can be inferred from the first sentence (premise).
     
 ---
-### 3. Natural Language Generation (NLG)
-#### 3.1 Text generation:
+### Natural Language Generation (NLG)
+involves the generation of human-like text (coherent and contextually relevant text) based on input data.
+#### 1. Text generation:
 Text generation is the process of generating human-like text. It encompasses various methodologies, techniques, and models for generating human-like text across many domains, including Natural Language Generation (NLG) models and other methods.
 - ***Natural Language Generation (NLG)***: These models focus on generating human-like text from structured data or input prompts. NLG models aim to produce coherent and contextually relevant text in natural language using various techniques and approaches for generating text, including rule-based methods, statistical models, and deep learning architectures. Its applications in generating text that resembles human language, such as chatbots, content generation, summarization, and translation.
   - The steps within an NLG system:
@@ -140,7 +137,7 @@ Text generation is the process of generating human-like text. It encompasses var
     - ***Code Generation***: Automatically generating code snippets or scripts based on specifications or input requirements.
     - ***Image Captioning***: Generating descriptive captions for images, improving accessibility and user experience in image-based applications. 
       
-#### 3.2 Text generation models
+#### 2. Text generation models
 Text generation refers to the process of generating human-like text using various techniques and models
 There are two main categories of Text Generation Models:
 - **Rule-based models**: rely on predefined rules and templates, offering control and explainability but limited creativity.
@@ -149,13 +146,13 @@ There are two main categories of Text Generation Models:
   - **Neural statistical models**: Includes Bengio's ***Neural Probabilistic Language Model (NPLM)***
   - **Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes ***Transformers*** and ***Large Language Models (LLMs)*** respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
     
-##### 3.2.1 Rule-based models:
+##### 2.1 Rule-based models:
 - ***Predefined Rules***: Linguists and domain experts craft a set of rules that govern how the text is structured and phrased. These rules cover aspects like grammar, sentence structure, and word choice.
 - ***Pattern Matching***: The model analyzes the situation or input and identifies patterns that match its rule set.
 - ***Template Selection***: Based on the matched pattern, the model selects a pre-defined template for the text generation. These templates can be simple phrases or more complex structures with placeholders.
 - ***Filling the Blanks***: The model fills the placeholders in the chosen template with specific words based on the rules and any available data.
   
-##### 3.2.2 Statistical models:
+##### 2.2 Statistical models:
 - **Traditional statistical models**: <Br>
 Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***predictions***. This category encompasses techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)*** used for text generation.
   - [N-grams](https://colab.research.google.com/drive/1lgbXAnXiJV26cegl8H5pUnO8dvEQYYbW?usp=sharing)
@@ -174,8 +171,8 @@ Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***p
       - **LangChain**: focuses on prompt engineering, multi-step workflows, and abstraction of LLM integration
       - **Hugging Face**: emphasizes model access, fine-tuning, and community collaboration
         
-#### 3.3 Large Language Models (LLMs):
-##### 3.3.1 Prompt: 
+#### 3. Large Language Models (LLMs):
+##### 3.1 Prompt: 
 Play a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
 - **Basic prompting engineering techniques**: fundamental strategies used to design prompts
   - ***Task Definition***: Clearly define the task or objective to guide the model's behavior.
@@ -205,7 +202,7 @@ Play a crucial role in using prompting engineering techniques to guide the model
   - ***Multimodal CoT***: extends Chain-of-Thought prompting to incorporate multimodal inputs.
   - ***Graph Prompting***: represents prompts and responses as graphs, facilitating efficient processing and manipulation.
 
-##### 3.3.2 Pretrained models:
+##### 3.2 Pretrained models:
 - **Closed-Source Models**:
 These models are developed by organizations that do not publicly release the model weights or code. They are usually accessible through APIs or specific platforms.
   - GPT-n (OpenAI): A powerful language model with billions of parameters, available via the OpenAI API.
@@ -217,7 +214,7 @@ These models are publicly released with their weights and code, allowing anyone 
   - GPT-2 (OpenAI): The predecessor to GPT-3, smaller but still very capable, available for download and customization.
   - RoBERT-a (Facebook AI): A robustly optimized version of BERT, designed to improve performance on NLP tasks.
 
-##### 3.3.3 Capabilities of LLMs: 
+##### 3.3 Capabilities of LLMs: 
 Some of the key capabilities of text generation models include:
 - ***Natural Language Understanding***: understand and process natural language input, allowing them to interpret user queries, commands, or prompts effectively.
 - ***Contextual Understanding***: captures contextual information from the input text, enabling the generation of responses or outputs that are contextually relevant and coherent.
@@ -230,7 +227,7 @@ Some of the key capabilities of text generation models include:
 - ***Semantic Understanding***: understand the semantic meaning of the input text, enabling them to generate semantically meaningful responses aligned with the input.
 - ***Interactive Generation***: support interactive generation, where users can provide feedback or guidance in the generation process to steer the outputs toward desired directions.
   
-##### 3.3.4 Performance-enhanced LLMs in domain-specific knowledge:
+##### 3.4 Performance-enhanced LLMs in domain-specific knowledge:
 While LLMs possess impressive capabilities, fine-tuning remains valuable for several reasons:
 - ***Task-Specific Adaptation***: Fine-tuning allows models to adapt to specific tasks or domains, optimizing their performance for particular applications.
 - ***Domain-Specific Knowledge***: Fine-tuning enables models to learn domain-specific nuances and vocabulary, enhancing the relevance and accuracy of generated outputs.
@@ -247,7 +244,7 @@ A general process of fine-tuning:
 - ***Refinement***: Adjust as needed.
 - ***Deployment***: Use the fine-tuned model for text generation tasks.
   
-##### 3.3.5 Applications of LLMs:
+##### 3.5 Applications of LLMs:
 There is 1 special point, the LLMs are built using Transformers (often) or other deep learning architectures to train for NLG tasks. However, they are highly versatile and can be fine-tuned for various applications beyond traditional NLG tasks. Therefore some tasks typically fall outside the scope of Natural Language Generation (NLG) tasks but inside the scope of LLMs. For code generation tasks (which fall outside the scope of NLG), LLMs can be trained to understand programming languages and generate code snippets or scripts based on input prompts. This can be particularly useful for automating software development tasks, providing code suggestions, or assisting programmers in writing code more efficiently.
 - ***Language translation***
 - ***Text summarization***
@@ -261,8 +258,8 @@ There is 1 special point, the LLMs are built using Transformers (often) or other
 - ***Knowledge discovery and exploration***
   
 ---
-### 4. Retrieval-Augmented Generation (RAG)
-#### 4.1 Retrieval-Augmented Generation (RAG)
+### Retrieval-Augmented Generation (RAG)
+#### 1. Retrieval-Augmented Generation (RAG)
 Instead of only using generating models, Retrieval-augmented generation (RAG)  first understands queries (as inputs). It creates results (as outputs) by combining a model retrieving relevant information and a model generating text from that information. By combining, a model’s strengths compensate for the other’s weaknesses to output the best-suited responses. <Br>
 Flow: **Question + Retrieval-Augmented Generation (RAG) => Answer** <Br>
 Retrieval-Augmented Generation (RAG) components <Br>
@@ -275,7 +272,7 @@ Retrieval-Augmented Generation (RAG) components <Br>
 - Generation
   - [Generation](https://colab.research.google.com/drive/1aJYZcQCsVia4Vay7tT53mRthgsmARwUY?usp=drive_link)
     
-#### 4.2 Retrieval Augmented Fine-Tuning (RAFT)
+#### 2. Retrieval Augmented Fine-Tuning (RAFT)
 Retrieval Augmented Fine-Tuning (RAFT) is a performance-enhanced RAG in domain-specific knowledge. <Br>
 Flow: **RAG + Fine-Tuning => RAFT** <Br>
 Retrieval Augmented Fine-Tuning (RAFT) components
