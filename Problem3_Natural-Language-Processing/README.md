@@ -280,3 +280,13 @@ Retrieval Augmented Fine-Tuning (RAFT) components
 - Retrieval-Augmented Generation (RAG)
 - [Fine-Tuning](https://colab.research.google.com/drive/1FKaIwp_7ZugNRBAk0MBEuLSXvlbKz_Nb?usp=drive_link)
 
+---
+### Vision-Language Models (VLMs)
+The Bridge Between Vision and Language
+#### 1. Motivation
+- **Achieving Human-like Perception**: VLMs aim to mimic the brain connecting what we see (image) with how we describe it (language), thereby allowing machines to process visual data and associated language.
+- **Expanding Capabilities of AI**:  by incorporating textual information, VLMs can achieve a richer understanding of the visual world to grasp the context of an image where traditional computer vision models are having difficulty.
+- **Revolutionizing Downstream Tasks**:  Accurately answer questions about an image's content (VQA), generate captions that describe the scene (Image Captioning), or even search for similar images based on a text description (TBIR) will transform various fields like image retrieval, image understanding, and human-computer interaction.
+- **Understanding the Real World**: learn more about the world around us by combining visual and textual data in tasks like autonomous vehicles, robotics, and image-based medical diagnosis.
+#### 2. Breaking down
+updating...
