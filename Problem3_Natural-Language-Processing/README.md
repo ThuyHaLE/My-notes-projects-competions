@@ -100,10 +100,10 @@ Refine and format the model's output for the end application.
     
 ---
 ### Natural Language Generation (NLG)
-**Natural Language Generation (NLG)** involves the generation of human-like text (coherent and contextually relevant text) based on input data.
-#### 1. Text generation:
-Text generation is the process of generating human-like text. It encompasses various methodologies, techniques, and models for generating human-like text across many domains, including Natural Language Generation (NLG) models and other methods.
-- ***Natural Language Generation (NLG)***: These models focus on generating human-like text from structured data or input prompts. NLG models aim to produce coherent and contextually relevant text in natural language using various techniques and approaches for generating text, including rule-based methods, statistical models, and deep learning architectures. Its applications in generating text that resembles human language, such as chatbots, content generation, summarization, and translation.
+- ***Natural Language Generation (NLG)***: aim to convert ***structured data/input prompt*** into ***coherent and contextually relevant natural language text*** such as:
+    - ***Report Generation***: Creating financial reports, weather summaries, and business insights based on raw data.
+    - ***Personalized Communication***: Creating emails, customer service responses, and product descriptions.
+    - ***Data Narratives***: Translating complex data sets into easily understandable narratives (business intelligence/analytics).
   - The steps within an NLG system:
     - ***Content analysis***: analyzes the information that will be transformed into text, often focusing on understanding the meaning and themes within existing textual data.
     - ***Data understanding***: a crucial initial step, where the system grasps the meaning and structure of the non-linguistic data it needs to convert to text.
@@ -111,60 +111,39 @@ Text generation is the process of generating human-like text. It encompasses var
     - ***Sentence aggregation***: combine or condense information from various data points into concise sentences.
     - ***Grammar structuring***: is essential for generating human-like text. NLG systems employ grammar rules to ensure proper sentence structure.
     - ***Language presentation***: tailoring the text formality to the audience or stylistic elements depending on the NLG application.
-  - Some common applications of Natural Language Generation (NLG):
-    - ***Automated Content Generation***: Creating news articles, product descriptions, and social media posts.
-    - ***Chatbots and Virtual Assistants***: Engaging in natural language conversations for customer support and task assistance.
-    - ***Personalization and Recommendation***: Tailoring content and recommendations based on user preferences.
-    - ***Summarization and Abstraction***: Distilling key information from lengthy documents or data.
-    - ***Data Reporting and Dashboards***: Generating reports and narratives from structured data sources.
-    - ***Language Translation***: Automatically translating text between languages.
-    - ***Medical and Legal Documentation***: Automating the creation of medical reports, patient summaries, and legal documents.
-    - ***Creative Writing and Story Generation***: Producing original stories, poems, and narratives based on given prompts.
-- ***Text Generation***: This broader category includes NLG models and other techniques/approaches. Text generation models encompass methods, including rule-based models, statistical models, and deep learning architectures. Text generation models can produce diverse outputs, both human-like text and forms of text synthesis such as code generation and image captioning.
-  - The steps within a text generation system:
-    - ***Input Processing***: Understand and analyze input data or prompts.
-    - ***Model Selection***: Choose an appropriate text generation model.
-    - ***Model Training***: Train the model on a dataset of text examples.
-    - ***Text Generation***: Generate text output based on the trained model and input.
-    - ***Evaluation***: Assess the quality of a generated text.
-    - ***Fine-tuning***: Refine the model based on evaluation results.
-  - Some common applications of text generation:
-    - ***Automated Content Generation***
-    - ***Chatbots and Virtual Assistants***
-    - ***Text Summarization***
-    - ***Machine Translation***
-    - ***Poetry Generation, Storytelling and, Narrative Generation***
-    - ***Code Generation***: Automatically generating code snippets or scripts based on specifications or input requirements.
-    - ***Image Captioning***: Generating descriptive captions for images, improving accessibility and user experience in image-based applications. 
-      
-#### 2. Text generation models
-Text generation refers to the process of generating human-like text using various techniques and models
-There are two main categories of Text Generation Models:
-- **Rule-based models**: rely on predefined rules and templates, offering control and explainability but limited creativity.
-- **Statistical models**: learn patterns from large amounts of text data:
-  - **Traditional statistical models**: Techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)***.
-  - **Neural statistical models**: Includes Bengio's ***Neural Probabilistic Language Model (NPLM)***
-  - **Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes ***Transformers*** and ***Large Language Models (LLMs)*** respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
-    
-##### 2.1 Rule-based models:
+- ***Text Generation***: involve generating ***human-like text*** based on a given ***input or prompt*** across various domains such as:
+  - ***Creative Writing***: Generating poems, stories, and other forms of creative text.
+  - ***Dialogue Systems***: Creating responses for chatbots and conversational agents.
+  - ***Predictive Text***: Autocomplete features in smartphones and text editors.
+  - ***Content Creation***: Assisting in the generation of articles, summaries, and reports.
+
+- ***Text generation models***:
+There are two main categories of text generation Models:
+- **1. Rule-based models**: rely on predefined rules and templates, offering control and explainability but limited creativity.
+- **2. Statistical models**: learn patterns from large amounts of text data:
+  - **2.1 Traditional statistical models**: Techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)***.
+  - **2.2 Neural statistical models**: Includes Bengio's ***Neural Probabilistic Language Model (NPLM)***
+  - **2.3 Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes ***Transformers*** and ***Large Language Models (LLMs)*** respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
+
+##### 1. Rule-based models:
 - ***Predefined Rules***: Linguists and domain experts craft a set of rules that govern how the text is structured and phrased. These rules cover aspects like grammar, sentence structure, and word choice.
 - ***Pattern Matching***: The model analyzes the situation or input and identifies patterns that match its rule set.
 - ***Template Selection***: Based on the matched pattern, the model selects a pre-defined template for the text generation. These templates can be simple phrases or more complex structures with placeholders.
 - ***Filling the Blanks***: The model fills the placeholders in the chosen template with specific words based on the rules and any available data.
   
-##### 2.2 Statistical models:
-- **Traditional statistical models**: <Br>
+##### 2. Statistical models:
+- **2.1 Traditional statistical models**: <Br>
 Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***predictions***. This category encompasses techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)*** used for text generation.
   - [N-grams](https://colab.research.google.com/drive/1lgbXAnXiJV26cegl8H5pUnO8dvEQYYbW?usp=sharing)
   - Hidden Markov Models (HMMs)
   - Conditional Random Fields (CRFs)
-- **Neural statistical models**: This sub-category includes Bengio's NPLM. While NPLM utilizes some neural network concepts, it primarily relies on statistical learning from vast amounts of text data. It represents a stepping stone between traditional statistical models and deep learning approaches.
+- **2.2 Neural statistical models**: This sub-category includes Bengio's NPLM. While NPLM utilizes some neural network concepts, it primarily relies on statistical learning from vast amounts of text data. It represents a stepping stone between traditional statistical models and deep learning approaches.
   - [Neural Probabilistic Language Model (NPLM)](https://colab.research.google.com/drive/16GZscemOE5ecJbE6iutodr412XZmSw7l?usp=sharing)
-- **Deep Learning models**: <Br>
-  - **Transformers**: <Br> can be considered as ***Statistical models in a broader sense*** because they leverage statistical learning from vast amounts of text data. Besides, they incorporate deep neural networks for more complex pattern recognition and improved performance over traditional statistical techniques as ***A sub-category of statistical models with deep learning elements***.
+- **2.3 Deep Learning models**: <Br>
+  - **2.3.1 Transformers**: <Br> can be considered as ***Statistical models in a broader sense*** because they leverage statistical learning from vast amounts of text data. Besides, they incorporate deep neural networks for more complex pattern recognition and improved performance over traditional statistical techniques as ***A sub-category of statistical models with deep learning elements***.
     - **Decoder-Only Transformers** (e.g., GPT-n): focus solely on the decoder part, excelling at text generation tasks like creating stories or poems. They process information sequentially, predicting the next word based on the previous ones. However, they may not be ideal for tasks requiring full context understanding, such as question answering.
     - **Encoder-Decoder Transformers** (e.g., T5): combine encoder and decoder parts. The encoder encodes the input sentence, and the decoder uses that encoded representation to generate the output. These models are often used for machine translation, where the model's mission is to understand the source language (encode) and generate the target language (decode).
-  - **Large Language Models (LLMs)**: <Br> A deep learning model specifically trained on massive amounts of text data allows them to learn complex statistical relationships between words and generate human-quality text as a response to a prompt or question.
+  - **2.3.2 Large Language Models (LLMs)**: <Br> A deep learning model specifically trained on massive amounts of text data allows them to learn complex statistical relationships between words and generate human-quality text as a response to a prompt or question.
     - **Pretrained-model**: include Closed-Source Models which are powerful, state-of-the-art models like GPT-3, Gemini, and Claude... available via commercial APIs or specific platforms, and Open-Source Models which are widely accessible and customizable models like BERT, GPT-2, RoBERTa, and T5, available for download and fine-tuning.
     - **Prompt**: plays a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
     - **Open-source framework**: is designed to facilitate the development of applications powered by large language models (LLMs). It streamlines the process includes integrating and managing LLMs in various applications, enabling developers to build sophisticated AI systems more efficiently. Its benefits include (1) No licensing fees, reduced financial burden, (2) Open source code allows inspection and fosters trust, (3) Enables community contributions and faster advancement, (4) Adaptable to specific needs and allows for fine-tuning, (5) Provides learning opportunities for developers and researchers...
@@ -209,11 +188,13 @@ These models are developed by organizations that do not publicly release the mod
   - GPT-n (OpenAI): A powerful language model with billions of parameters, available via the OpenAI API.
   - Gemini (Google DeepMind): Advanced models are typically not open-sourced but accessible through Google's platforms.
   - Claude (Anthropic): An advanced language model accessed via specific platforms or APIs.
+  - ...
 - **Open-Source Models**:
 These models are publicly released with their weights and code, allowing anyone to download, fine-tune, and deploy them.
   - BERT (Google): Bidirectional Encoder Representations from Transformers, effective for many NLP tasks.
   - GPT-2 (OpenAI): The predecessor to GPT-3, smaller but still very capable, available for download and customization.
   - RoBERT-a (Facebook AI): A robustly optimized version of BERT, designed to improve performance on NLP tasks.
+  - ...
 
 ##### 3. Capabilities of LLMs: 
 Some of the key capabilities of text generation models include:
@@ -286,7 +267,33 @@ The Bridge Between Vision and Language
 #### 1. Motivation
 - **Achieving Human-like Perception**: VLMs aim to mimic the brain connecting what we see (image) with how we describe it (language), thereby allowing machines to process visual data and associated language.
 - **Expanding Capabilities of AI**:  by incorporating textual information, VLMs can achieve a richer understanding of the visual world to grasp the context of an image where traditional computer vision models are having difficulty.
-- **Revolutionizing Downstream Tasks**:  Accurately answer questions about an image's content (VQA), generate captions that describe the scene (Image Captioning), or even search for similar images based on a text description (TBIR) will transform various fields like image retrieval, image understanding, and human-computer interaction.
+- **Revolutionizing Downstream Tasks**:  answer questions about an image's content (VQA), generate captions that describe the scene (Image Captioning), or even search for similar images based on a text description (TBIR) will transform various fields like image retrieval, image understanding, and human-computer interaction.
 - **Understanding the Real World**: learn more about the world around us by combining visual and textual data in tasks like autonomous vehicles, robotics, and image-based medical diagnosis.
 #### 2. Breaking down
-updating...
+Vision-language models (LLMs) integrate visual and textual information to perform tasks involving both modalities. 
+- **Inputs**:
+  - ***Images***: Image (Raw or preprocessed versions as resized, and normalized...).
+  - ***Text***: Natural language text (a sentence, a phrase, or a question).
+- **Feature Extraction**:
+  - ***Visual Features Extraction for Images***: using a convolutional neural network (CNN) including ResNet, EfficientNet, or a vision transformer (ViT). 
+  - ***Textual Features Extraction for Texts***: as tokenized and embedded form using models like BERT, GPT, or other transformer-based architectures to capture the semantic meaning of the text.
+- **Multimodal Fusion**: Combines visual and textual features through concatenation, attention mechanisms, or more sophisticated cross-modal transformers. Example: ViLBERT uses two separate transformers for image and text, with cross-attention layers to allow information exchange between the two modalities.
+- **Training**: using large datasets that include paired images and text (e.g., image-caption pairs) and optimizing the model to minimize the difference between predicted outputs and the actual labels in the dataset. Training objectives vary depending on specific tasks (desired outputs), including contrastive learning, masked language modeling, image-text matching, or task-related losses (e.g., classification or regression).
+  - Loss function in VLMs: a crucial role to understand and integrate visual and textual data effectively. Depending on the specific task and model architecture, different types of loss functions can be used.
+    - Contrastive Loss (Image-Text Matching)
+    - Cross-Entropy Loss (VQA, Image Captioning)
+    - Masked Language Modeling (MLM) Loss (Multimodal Transformers)
+    - Regression Loss (Visual Grounding, Image-Text Retrieval)
+    - Combined Loss Functions (multiple tasks simultaneously)
+- **Outputs**: Depending on the task, different heads can be used to produce the final output.
+  - **Textual Outputs**: 
+    - ***Image Captioning***: a textual description of the given image using a sequence generation head (transformer decoder or LSTM).
+    - ***Visual Question Answering (VQA)***: answer a question about an image, using the classification head to predict the correct answer.
+  - **Numerical or Categorical Outputs**:
+      - ***Image-Text Matching***: score or probability indicating the relevance of a textual description to an image, using similarity scoring head to calculate a score or probability.
+      - ***Visual Grounding***: coordinates or bounding boxes in the image corresponding to a textual description, using regression head to predict bounding box coordinates
+  - **Visual Outputs**:
+    - ***Text-to-Image Generation***: image generated based on a textual prompt (like DALL-E), using image generation head (GANs or diffusion models).
+  - **Retrieval Outputs**:
+    - Image Retrieval: A list of images that match a given textual description, using retrieval head using similarity scores or embeddings.
+    - Text Retrieval: A list of text descriptions that match a given image using a sequence generation head (transformer decoder or LSTM).
