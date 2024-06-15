@@ -295,5 +295,5 @@ Vision-language models (LLMs) integrate visual and textual information to perfor
   - **Visual Outputs**:
     - ***Text-to-Image Generation***: image generated based on a textual prompt (like DALL-E), using image generation head (GANs or diffusion models).
   - **Retrieval Outputs**:
-    - Image Retrieval: A list of images that match a given textual description, using retrieval head using similarity scores or embeddings.
-    - Text Retrieval: A list of text descriptions that match a given image using a sequence generation head (transformer decoder or LSTM).
+    - ***Image Retrieval***: list of images that match a given textual description, using retrieval head using similarity scores or embeddings.
+    - ***Text Retrieval***: list of text descriptions that match a given image using a sequence generation head (transformer decoder or LSTM).
