@@ -119,36 +119,36 @@ Refine and format the model's output for the end application.
 
 - ***Text generation models***:
 There are two main categories of text generation Models:
-- **1. Rule-based models**: rely on predefined rules and templates, offering control and explainability but limited creativity.
-- **2. Statistical models**: learn patterns from large amounts of text data:
-  - **2.1 Traditional statistical models**: Techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)***.
-  - **2.2 Neural statistical models**: Includes Bengio's ***Neural Probabilistic Language Model (NPLM)***
-  - **2.3 Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes ***Transformers*** and ***Large Language Models (LLMs)*** respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
+  - **1. Rule-based models**: rely on predefined rules and templates, offering control and explainability but limited creativity.
+  - **2. Statistical models**: learn patterns from large amounts of text data:
+    - **2.1 Traditional statistical models**: Techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)***.
+    - **2.2 Neural statistical models**: Includes Bengio's ***Neural Probabilistic Language Model (NPLM)***
+    - **2.3 Deep Learning models**: A ***specific type*** of the statistical model using ***deep learning architectures*** includes ***Transformers*** and ***Large Language Models (LLMs)*** respectively. While transformers share ***some characteristics with statistical models***, they are a ***more advanced architecture***. They use ***deep learning techniques*** with ***artificial neural networks*** to process information. However, they are still trained on ***massive amounts*** of text data, and their outputs are based on the ***statistical patterns*** learned from that data. LLMs are built using Transformers (often) or other deep learning architectures to train specifically for NLG tasks and excel at generating creative and human-like text.
 
-##### 1. Rule-based models:
-- ***Predefined Rules***: Linguists and domain experts craft a set of rules that govern how the text is structured and phrased. These rules cover aspects like grammar, sentence structure, and word choice.
-- ***Pattern Matching***: The model analyzes the situation or input and identifies patterns that match its rule set.
-- ***Template Selection***: Based on the matched pattern, the model selects a pre-defined template for the text generation. These templates can be simple phrases or more complex structures with placeholders.
-- ***Filling the Blanks***: The model fills the placeholders in the chosen template with specific words based on the rules and any available data.
-  
-##### 2. Statistical models:
-- **2.1 Traditional statistical models**: <Br>
-Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***predictions***. This category encompasses techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)*** used for text generation.
-  - [N-grams](https://colab.research.google.com/drive/1lgbXAnXiJV26cegl8H5pUnO8dvEQYYbW?usp=sharing)
-  - Hidden Markov Models (HMMs)
-  - Conditional Random Fields (CRFs)
-- **2.2 Neural statistical models**: This sub-category includes Bengio's NPLM. While NPLM utilizes some neural network concepts, it primarily relies on statistical learning from vast amounts of text data. It represents a stepping stone between traditional statistical models and deep learning approaches.
-  - [Neural Probabilistic Language Model (NPLM)](https://colab.research.google.com/drive/16GZscemOE5ecJbE6iutodr412XZmSw7l?usp=sharing)
-- **2.3 Deep Learning models**: <Br>
-  - **2.3.1 Transformers**: <Br> can be considered as ***Statistical models in a broader sense*** because they leverage statistical learning from vast amounts of text data. Besides, they incorporate deep neural networks for more complex pattern recognition and improved performance over traditional statistical techniques as ***A sub-category of statistical models with deep learning elements***.
-    - **Decoder-Only Transformers** (e.g., GPT-n): focus solely on the decoder part, excelling at text generation tasks like creating stories or poems. They process information sequentially, predicting the next word based on the previous ones. However, they may not be ideal for tasks requiring full context understanding, such as question answering.
-    - **Encoder-Decoder Transformers** (e.g., T5): combine encoder and decoder parts. The encoder encodes the input sentence, and the decoder uses that encoded representation to generate the output. These models are often used for machine translation, where the model's mission is to understand the source language (encode) and generate the target language (decode).
-  - **2.3.2 Large Language Models (LLMs)**: <Br> A deep learning model specifically trained on massive amounts of text data allows them to learn complex statistical relationships between words and generate human-quality text as a response to a prompt or question.
-    - **Pretrained-model**: include Closed-Source Models which are powerful, state-of-the-art models like GPT-3, Gemini, and Claude... available via commercial APIs or specific platforms, and Open-Source Models which are widely accessible and customizable models like BERT, GPT-2, RoBERTa, and T5, available for download and fine-tuning.
-    - **Prompt**: plays a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
-    - **Open-source framework**: is designed to facilitate the development of applications powered by large language models (LLMs). It streamlines the process includes integrating and managing LLMs in various applications, enabling developers to build sophisticated AI systems more efficiently. Its benefits include (1) No licensing fees, reduced financial burden, (2) Open source code allows inspection and fosters trust, (3) Enables community contributions and faster advancement, (4) Adaptable to specific needs and allows for fine-tuning, (5) Provides learning opportunities for developers and researchers...
-      - **LangChain**: focuses on prompt engineering, multi-step workflows, and abstraction of LLM integration
-      - **Hugging Face**: emphasizes model access, fine-tuning, and community collaboration
+  ##### 1. Rule-based models:
+  - ***Predefined Rules***: Linguists and domain experts craft a set of rules that govern how the text is structured and phrased. These rules cover aspects like grammar, sentence structure, and word choice.
+  - ***Pattern Matching***: The model analyzes the situation or input and identifies patterns that match its rule set.
+  - ***Template Selection***: Based on the matched pattern, the model selects a pre-defined template for the text generation. These templates can be simple phrases or more complex structures with placeholders.
+  - ***Filling the Blanks***: The model fills the placeholders in the chosen template with specific words based on the rules and any available data.
+    
+  ##### 2. Statistical models:
+  - **2.1 Traditional statistical models**: <Br>
+  Rely on ***statistical analysis*** of data to learn ***patterns*** and make ***predictions***. This category encompasses techniques like ***n-grams***, ***Hidden Markov Models (HMMs)***, and ***Conditional Random Fields (CRFs)*** used for text generation.
+    - [N-grams](https://colab.research.google.com/drive/1lgbXAnXiJV26cegl8H5pUnO8dvEQYYbW?usp=sharing)
+    - Hidden Markov Models (HMMs)
+    - Conditional Random Fields (CRFs)
+  - **2.2 Neural statistical models**: This sub-category includes Bengio's NPLM. While NPLM utilizes some neural network concepts, it primarily relies on statistical learning from vast amounts of text data. It represents a stepping stone between traditional statistical models and deep learning approaches.
+    - [Neural Probabilistic Language Model (NPLM)](https://colab.research.google.com/drive/16GZscemOE5ecJbE6iutodr412XZmSw7l?usp=sharing)
+  - **2.3 Deep Learning models**: <Br>
+    - **2.3.1 Transformers**: <Br> can be considered as ***Statistical models in a broader sense*** because they leverage statistical learning from vast amounts of text data. Besides, they incorporate deep neural networks for more complex pattern recognition and improved performance over traditional statistical techniques as ***A sub-category of statistical models with deep learning elements***.
+      - **Decoder-Only Transformers** (e.g., GPT-n): focus solely on the decoder part, excelling at text generation tasks like creating stories or poems. They process information sequentially, predicting the next word based on the previous ones. However, they may not be ideal for tasks requiring full context understanding, such as question answering.
+      - **Encoder-Decoder Transformers** (e.g., T5): combine encoder and decoder parts. The encoder encodes the input sentence, and the decoder uses that encoded representation to generate the output. These models are often used for machine translation, where the model's mission is to understand the source language (encode) and generate the target language (decode).
+    - **2.3.2 Large Language Models (LLMs)**: <Br> A deep learning model specifically trained on massive amounts of text data allows them to learn complex statistical relationships between words and generate human-quality text as a response to a prompt or question.
+      - **Pretrained-model**: include Closed-Source Models which are powerful, state-of-the-art models like GPT-3, Gemini, and Claude... available via commercial APIs or specific platforms, and Open-Source Models which are widely accessible and customizable models like BERT, GPT-2, RoBERTa, and T5, available for download and fine-tuning.
+      - **Prompt**: plays a crucial role in using prompting engineering techniques to guide the models (LLMs) to generate desired outputs.
+      - **Open-source framework**: is designed to facilitate the development of applications powered by large language models (LLMs). It streamlines the process includes integrating and managing LLMs in various applications, enabling developers to build sophisticated AI systems more efficiently. Its benefits include (1) No licensing fees, reduced financial burden, (2) Open source code allows inspection and fosters trust, (3) Enables community contributions and faster advancement, (4) Adaptable to specific needs and allows for fine-tuning, (5) Provides learning opportunities for developers and researchers...
+        - **LangChain**: focuses on prompt engineering, multi-step workflows, and abstraction of LLM integration
+        - **Hugging Face**: emphasizes model access, fine-tuning, and community collaboration
 
 ---
 #### Large Language Models (LLMs):
