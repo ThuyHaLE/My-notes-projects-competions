@@ -279,7 +279,7 @@ Vision-language models (LLMs) integrate visual and textual information to perfor
   - ***Textual Features Extraction for Texts***: as tokenized and embedded form using models like BERT, GPT, or other transformer-based architectures to capture the semantic meaning of the text.
 - **Multimodal Fusion**: Combines visual and textual features through concatenation, attention mechanisms, or more sophisticated cross-modal transformers. Example: ViLBERT uses two separate transformers for image and text, with cross-attention layers to allow information exchange between the two modalities.
 - **Training**: using large datasets that include paired images and text (e.g., image-caption pairs) and optimizing the model to minimize the difference between predicted outputs and the actual labels in the dataset. Training objectives vary depending on specific tasks (desired outputs), including contrastive learning, masked language modeling, image-text matching, or task-related losses (e.g., classification or regression).
-  - Loss function in VLMs: a crucial role to understand and integrate visual and textual data effectively. Depending on the specific task and model architecture, different types of loss functions can be used.
+  - ***Loss function in VLMs***: a crucial role to understand and integrate visual and textual data effectively. Depending on the specific task and model architecture, different types of loss functions can be used.
     - Contrastive Loss (Image-Text Matching)
     - Cross-Entropy Loss (VQA, Image Captioning)
     - Masked Language Modeling (MLM) Loss (Multimodal Transformers)
