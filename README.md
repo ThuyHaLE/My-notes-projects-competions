@@ -13,6 +13,7 @@ My notes, my projects and my competitions
 >My competitions
 - 📎 [Kalapa Challenge 2023 - Vietnamese medical question answering](https://github.com/ThuyHaLE/VietnameseMedQA)
 - 📎 [Kalapa Challenge 2023 - Vietnamese Handwritten Text Recognition](https://github.com/ThuyHaLE/VietnameseHandwrittenTextRecognition)
+- 📎 [Angle_Hack 2024 - Heineken's image analysis tool](https://github.com/duongtruongbinh/hackhcmc-AIO_CGLG2.0)
   
 >Some API applications
 - 📎 API-applications
