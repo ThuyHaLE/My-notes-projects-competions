@@ -4,7 +4,7 @@ My notes, my projects and my competitions
 >My notes
 - 📎 Problem1_Prediction
 - 📎 Problem2_Digital-Image-Processing
-- 📎 [Problem3_Natural-Language-Processing](https://github.com/ThuyHaLE/Problem3_Natural-Language-Processing)
+- 📎 Problem3_Natural-Language-Processing
 - 📎 Problem4_Data-Analysis-Visualization
 
 >My projects
